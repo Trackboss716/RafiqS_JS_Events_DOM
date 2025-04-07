@@ -25,11 +25,14 @@ document.addEventListener("keydown", function(e) {
     buttonEl.innerText = "You clicked me!"
    }
 
+   let buttonBackground = document.getElementById("randomColorBtn")
+   buttonBackground.addEventListener("click", getRandomColor)
+
 
     function getRandomColor() {
         
         const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-        return randomColor;
+       document.querySelector("body").style.backgroundColor = randomColor
     }
     
     
