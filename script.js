@@ -35,5 +35,9 @@ document.addEventListener("keydown", function(e) {
        document.querySelector("body").style.backgroundColor = randomColor
     }
     
-    
+    function changeBtnStyle() {
+        const btn = document.querySelector(".cool-btn")
+        btn.classList.toggle("glow"); // Toggles glow effect
+       }
+       
    
