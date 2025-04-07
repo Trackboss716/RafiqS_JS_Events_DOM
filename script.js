@@ -39,5 +39,21 @@ document.addEventListener("keydown", function(e) {
         const btn = document.querySelector(".cool-btn")
         btn.classList.toggle("glow"); // Toggles glow effect
        }
+
        
-   
+    let darkBackground = document.getElementById("dark-btn")
+       darkBackground.addEventListener("click", darkMode )   
+       
+       
+       function darkMode(){
+        document.querySelector("body").classList.toggle("dark-btn");
+       
+       if ( darkBackground.innerText === "dark mode"){
+        darkBackground.innerText = "light mode"
+    }  
+    else if (darkBackground.innerText === "light mode"){
+        darkBackground.innerText = "dark mode"
+    }
+    }
+
+       
