@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
     
     onLoadEl.innerHTML = "<h1> I loaded cause the DOM was fully loaded</h1>"
    
-   })
+   });
 
    
 let directionEl = document.getElementById("direction");
@@ -20,9 +20,17 @@ document.addEventListener("keydown", function(e) {
 });
 
    let buttonEl = document.getElementById("clickMe");
+   buttonEl.addEventListener("click", clickEvent);
+   function clickEvent(){
+    buttonEl.innerText = "You clicked me!"
+   }
 
-document.addEventListener("click");
 
-document.getElementById("clickMe")
-    this.innerText = "You clicked me!";
-
+    function getRandomColor() {
+        
+        const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        return randomColor;
+    }
+    
+    
+   
